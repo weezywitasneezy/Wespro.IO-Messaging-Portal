@@ -5,7 +5,7 @@ import abi from './utils/WavePortal.json';
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
-  const contractAddress = "0xDDcED873Ce291d715536cD8b4D4691a77B3C5d44";
+  const contractAddress = "0x365f472eb3FC3947b0dfE7841DC6946868E21350";
   const contractABI = abi.abi;
   const [totalWaves, setTotalWaves] = useState();
   
