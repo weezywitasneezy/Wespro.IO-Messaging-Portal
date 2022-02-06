@@ -17,7 +17,9 @@ const App = () => {
       if (!ethereum) {
         console.log("Make sure you have metamask!");
         return;
-      } else {
+      }
+      
+       else {
         console.log("We have the ethereum object", ethereum);
       }
 
@@ -27,7 +29,10 @@ const App = () => {
         const account = accounts[0];
         console.log("Found an authorized account:", account);
         setCurrentAccount(account)
-      } else {
+        getAllWaves()
+      }
+      
+       else {
         console.log("No authorized account found")
       }
     } catch (error) {
@@ -121,6 +126,7 @@ const App = () => {
   }
 
   useEffect(() => {
+    getAllWaves();
     checkIfWalletIsConnected();
   }, [])
   
